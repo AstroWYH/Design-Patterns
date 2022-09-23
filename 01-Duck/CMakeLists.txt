@@ -1,10 +1,5 @@
+# cmake -G "MinGW Makefiles" ..
 cmake_minimum_required(VERSION 3.10)
-
-# set(CMAKE_C_COMPILER "/d/mingw64/bin/gcc.exe")
-# set(CMAKE_CXX_COMPILER "/d/mingw64/bin/g++.exe")
-
-# cmake -G “MinGW Makefiles” ..
-
 project(DUCK)
 
 include_directories(${CMAKE_SOURCE_DIR}/duck/)

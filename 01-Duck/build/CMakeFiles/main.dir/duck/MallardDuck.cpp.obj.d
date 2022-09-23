@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/main.cpp.obj: \
- G:\notes\Desigh-Patterns\01-Duck\main.cpp \
+CMakeFiles/main.dir/duck/MallardDuck.cpp.obj: \
+ G:\notes\Desigh-Patterns\01-Duck\duck\MallardDuck.cpp \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -148,7 +148,9 @@ CMakeFiles/main.dir/main.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
- G:/notes/Desigh-Patterns/01-Duck/duck/MallardDuck.h \
- G:/notes/Desigh-Patterns/01-Duck/duck/Duck.h \
+ G:\notes\Desigh-Patterns\01-Duck\duck\MallardDuck.h \
+ G:\notes\Desigh-Patterns\01-Duck\duck\Duck.h \
  G:/notes/Desigh-Patterns/01-Duck/behavior/FlyBehavior.h \
- G:/notes/Desigh-Patterns/01-Duck/behavior/QuackBehavior.h
+ G:/notes/Desigh-Patterns/01-Duck/behavior/QuackBehavior.h \
+ G:/notes/Desigh-Patterns/01-Duck/behavior/FlyWithWings.h \
+ G:/notes/Desigh-Patterns/01-Duck/behavior/QuackSqueak.h

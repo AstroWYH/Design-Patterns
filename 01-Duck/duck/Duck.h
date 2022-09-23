@@ -1,8 +1,7 @@
 #pragma once
 #include <memory>
-
-class FlyBehavior;
-class QuackBehavior;
+#include "FlyBehavior.h";
+#include "QuackBehavior.h";
 
 class Duck {
 public:
