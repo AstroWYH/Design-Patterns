@@ -1,0 +1,3 @@
+G:/notes/Desigh-Patterns/01-Duck/build/CMakeFiles/main.dir
+G:/notes/Desigh-Patterns/01-Duck/build/CMakeFiles/edit_cache.dir
+G:/notes/Desigh-Patterns/01-Duck/build/CMakeFiles/rebuild_cache.dir
