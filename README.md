@@ -1,7 +1,5 @@
 # Design-Patterns
-常用设计模式知识整理，Head First设计模式（Java）的C++整理实现版----AstroWYH
-
-
+常用设计模式知识整理，Head First设计模式（Java）的C++整理实现版，C++新经典设计模式整理----AstroWYH
 
 ### 01-Duck
 
