@@ -1,4 +1,6 @@
-#pragma once
+#pragma once 
+// 注意，不加的话，全局变量、函数声明不会冲突（虽然这没加）。
+// 但类Fighter会冲突，因为这虽然是类的声明，但也有点定义的意思在。
 
 class Fighter {
 public:
