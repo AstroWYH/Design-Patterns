@@ -12,4 +12,5 @@ int main() {
     // .reset(这里不能放make_unique)。
     fighter.reset(new Mage());
     fighter->Burn();
+    return 0;
 }
