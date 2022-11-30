@@ -7,9 +7,11 @@
 
 using namespace std;
 
+//简单工厂模式，只有这一个怪物工厂，没有具体每种怪物专门的工厂。
 class MonsterFactory {
 public:
     //将创建对象这个过程，放到怪物工厂的CreateMonster内来做。
+    //return的是Monster这个父类。
     unique_ptr<Monster> CreateMonster(string type) {
         unique_ptr<Monster> monster = nullptr;
         if (type == "udd") {

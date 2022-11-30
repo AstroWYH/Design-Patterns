@@ -1,0 +1,9 @@
+﻿  main.cpp
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,10): error C7568: 假定的函数模板“shared_ptr”后面缺少参数列表
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,30): error C2062: 意外的类型“unknown-type”
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,45): error C2238: 意外的标记位于“;”之前
+G:\extra\Design-Patterns\03-工厂方法模式\UndeadFactory.h(15,30): error C3668: “UndeadFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\ElementFactory.h(15,30): error C3668: “ElementFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\MechanicFactory.h(15,30): error C3668: “MechanicFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\main.cpp(12,18): error C2039: "CreateMonster": 不是 "MonsterFactory" 的成员
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(4,7): message : 参见“MonsterFactory”的声明

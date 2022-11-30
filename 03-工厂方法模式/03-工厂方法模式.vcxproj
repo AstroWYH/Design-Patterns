@@ -18,21 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Monster.h" />
-    <ClInclude Include="MonsterFactory.h" />
-    <ClInclude Include="M_Element.h" />
-    <ClInclude Include="M_Mechanic.h" />
-    <ClInclude Include="M_Undead.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a08699fb-d0c0-443a-af2c-88f4bc960b08}</ProjectGuid>
-    <RootNamespace>My02简单工厂模式</RootNamespace>
+    <ProjectGuid>{5e9ae951-f4a6-4765-b777-251a1684edd6}</ProjectGuid>
+    <RootNamespace>My03工厂方法模式</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -114,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -137,6 +128,19 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="ElementFactory.h" />
+    <ClInclude Include="Mechanic.h" />
+    <ClInclude Include="MechanicFactory.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterFactory.h" />
+    <ClInclude Include="Undead.h" />
+    <ClInclude Include="UndeadFactory.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
