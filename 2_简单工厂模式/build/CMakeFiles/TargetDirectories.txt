@@ -1,3 +1,0 @@
-/home/hanbabang/2_workspace/Design-Patterns/2_简单工厂模式/build/CMakeFiles/main.dir
-/home/hanbabang/2_workspace/Design-Patterns/2_简单工厂模式/build/CMakeFiles/edit_cache.dir
-/home/hanbabang/2_workspace/Design-Patterns/2_简单工厂模式/build/CMakeFiles/rebuild_cache.dir

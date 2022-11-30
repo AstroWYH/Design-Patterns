@@ -1,0 +1,7 @@
+﻿  Fighter.cpp
+G:\extra\Design-Patterns\01-模板方法模式\Fighter.cpp(18,36): warning C4819: 该文件包含不能在当前代码页(0)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Mage.cpp
+  Warrior.cpp
+  main.cpp
+  正在生成代码...
+  01-模板方法模式.vcxproj -> G:\extra\Design-Patterns\01-模板方法模式\x64\Debug\01-模板方法模式.exe
