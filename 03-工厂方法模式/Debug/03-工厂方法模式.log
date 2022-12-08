@@ -1,0 +1,10 @@
+﻿  main.cpp
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,20): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,20): error C2433: “MonsterFactory::shared_ptr”: 不允许在数据声明中使用“virtual”
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(9,49): error C2238: 意外的标记位于“;”之前
+G:\extra\Design-Patterns\03-工厂方法模式\UndeadFactory.h(15,30): error C3668: “UndeadFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\ElementFactory.h(15,30): error C3668: “ElementFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\MechanicFactory.h(15,30): error C3668: “MechanicFactory::CreateMonster”: 包含重写说明符“override”的方法没有重写任何基类方法
+G:\extra\Design-Patterns\03-工厂方法模式\main.cpp(12,18): error C2039: "CreateMonster": 不是 "MonsterFactory" 的成员
+G:\extra\Design-Patterns\03-工厂方法模式\MonsterFactory.h(4,7): message : 参见“MonsterFactory”的声明

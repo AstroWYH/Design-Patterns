@@ -1,5 +1,8 @@
 #pragma once
 #include "Monster.h"
+#include <memory>
+
+using namespace std;
 
 class MonsterFactory {
 public:
