@@ -8,11 +8,11 @@ using namespace std;
 
 int main() {
 	shared_ptr<LogToFile> file = make_shared<LogToFile>();
-	shared_ptr<LogAdapter> adapter = make_shared<LogAdapter>(file);
-	adapter->InitDB();
-	adapter->ReadFromDB();
-	adapter->WriteToDB();
-	adapter->CloseDB();
+	shared_ptr<LogToDB> db = make_shared<LogAdapter>(file);
+	db->InitDB();
+	db->ReadFromDB();
+	db->WriteToDB();
+	db->CloseDB();
 
 	return 0;
 }
