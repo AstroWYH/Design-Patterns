@@ -1,0 +1,1 @@
+G:\extra\Design-Patterns\05-适配器模式\x64\Debug\05-适配器模式.exe
