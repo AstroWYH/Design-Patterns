@@ -1,0 +1,1 @@
+G:\notes\Design-Patterns\06-观察者模式\x64\Debug\06-观察者模式.exe
