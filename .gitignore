@@ -72,3 +72,30 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# 忽略 Visual Studio 2022 的生成文件
+bin/
+obj/
+
+# 忽略调试日志和分析文件
+*.suo
+*.ipch/
+*.pdb
+
+# 忽略编译器生成的临时文件
+*.VC.db
+*.VC.opendb
+
+# 忽略 Resharper 缓存
+_ReSharper*/
+
+# 忽略 NuGet 包
+*.nuget/
+
+# 忽略用户特定设置文件
+*.user
+*.suo
+*.userprefs
+*.vspscc
+*.vssscc
+*.sln.docstates
