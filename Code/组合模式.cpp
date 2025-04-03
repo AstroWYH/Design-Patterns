@@ -59,7 +59,7 @@ public:
     }
 };
 
-#if 1
+#if 0
 int main() {
     std::string companyName;
     std::getline(std::cin, companyName);
