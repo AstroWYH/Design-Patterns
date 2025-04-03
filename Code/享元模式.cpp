@@ -81,7 +81,7 @@ public:
 
 void processCommand(ShapeFactory& factory, const std::string& command);
 
-#if 1
+#if 0
 int main() {
     ShapeFactory factory;
     std::string command;
