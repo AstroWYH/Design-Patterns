@@ -108,6 +108,28 @@ namespace ProductFilter
 				});
 		}
 
+		// 新增：独立搜索功能
+		std::vector<Product> SearchProducts(const std::string& keyword) const
+		{
+			std::vector<Product> result;
+
+			// 部分匹配
+			std::copy_if(
+				m_products.begin(),
+				m_products.end(),
+				std::back_inserter(result),
+				[&keyword](const Product& p) {
+					return p.m_name.find(keyword) != std::string::npos;
+				});
+
+			// 默认按ID排序
+			SortCriteria defaultSort;
+			defaultSort.m_sortById = true;
+			SortProducts(result, defaultSort);
+
+			return result;
+		}
+
 		// Get paginated products
 		std::vector<Product> GetPaginatedProducts(
 			const std::vector<Product>& products,
@@ -187,36 +209,39 @@ int main()
 	manager.AddProduct(Product(7, "Redmi K60", 2499.0, now - std::chrono::hours(8), ProductType::Phone));
 	manager.AddProduct(Product(8, "iMac", 14999.0, now - std::chrono::hours(12), ProductType::Computer));
 
+	// 筛选
 	// Set filter criteria: price > 500 and type = Phone
 	FilterCriteria filterCriteria;
 	filterCriteria.m_filterByPrice = true;
 	filterCriteria.m_minPrice = 0.0f;
 	filterCriteria.m_filterByType = false;
 	filterCriteria.m_type = ProductType::Phone;
-
 	// Set sort criteria: sort by latest
 	SortCriteria sortCriteria;
 	sortCriteria.m_sortById = false;
 	sortCriteria.m_sortByLatest = true;
-
 	// Apply filters
 	auto filteredProducts = manager.FilterProducts(filterCriteria);
-
 	// Apply sorting
 	manager.SortProducts(filteredProducts, sortCriteria);
-
 	// Pagination parameters
 	const int currentPage = 2;
 	const int itemsPerPage = 7;
-
 	// Get paginated results
 	auto paginatedProducts = manager.GetPaginatedProducts(filteredProducts, currentPage, itemsPerPage);
-
 	// Print results
 	std::cout << "Filter results (Price > 500, Phones only, sorted by latest, Page "
 		<< currentPage << ", " << itemsPerPage << " items per page):\n";
 	manager.PrintProducts(paginatedProducts);
 
+	// 搜索（此时忽略筛选）
+	std::cout << "\n=== Partial Search for 'Mac' ===" << std::endl;
+	auto partialResults = manager.SearchProducts("hone 15");
+	for (const auto& p : partialResults) {
+		std::cout << p.m_id << ": " << p.m_name << std::endl;
+	}
+
 	return 0;
 }
+
 ```
